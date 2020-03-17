@@ -43,7 +43,7 @@
           <a href="#page1">Home</a>
         </li>
         <li data-menuanchor="page2">
-          <a href="#page2">waht i do</a>
+          <a href="#page2">what i do</a>
         </li>
         <li data-menuanchor="page3">
           <a href="#page3">about me</a>
@@ -80,7 +80,7 @@
 
     <header class="navbar navbar-fullpage boxed">
       <div class="navbar-bg"></div>
-      <a class="brand" href="#">
+      <a class="brand" href="index.html#page1">
         <img alt="" src="images/brand.png">
         <div class="brand-info">
           <div class="brand-name">Johan Medina</div>
@@ -117,7 +117,7 @@
     <div class="pagepiling">
       <div data-anchor="page1" class="pp-scrollable text-white section section-1">
         <div class="scroll-wrap">
-          <div class="section-bg" style="background-image:url(images/bg/main.jpg);"></div>
+          <div class="section-bg" style="background-image:url(images/bg/banner.jpg);"></div>
           <div class="scrollable-content">
             <div class="vertical-centred">
               <div class="boxed boxed-inner">
@@ -128,8 +128,8 @@
                         <div class="col-md-8 col-lg-6">
                           <h1 class="display-2 text-white  wow fadeIn" data-wow-delay="0.1s"><span
                               class="text-primary">Interaction</span> Designer</h1>
-                          <a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><span
-                              class="icon ion-ios-play"></span>Watch video </a>
+                          <a class="cta-works" href="#page4"><span class="icon ion-ios-play"></span>take a look at my
+                            work</a>
                         </div>
                       </div>
                     </div>
@@ -212,32 +212,33 @@
                         </div>
                         <div class="col-lg-5 mt-5 mt-xl-0">
                           <h2 class="title"> <span class="text-primary">The best</span> UX & UI Products</h2>
-                          <p class="experience-description">During my professional development, I have had the opportunity to apply my knowledge in
-                          projects with real users and for real companies.</p>
+                          <p class="experience-description">During my professional development, I have had the
+                            opportunity to apply my knowledge in
+                            projects with real users and for real companies.</p>
                           <div class="progress-bars">
                             <div class="clearfix">
-                              <div class="number float-left">Interface Design and Branding</div>
-                              <div class="number float-right">90%</div>
+                              <div class="number float-left">User Interface Design and Branding</div>
+                              <div class="number float-right"></div>
                             </div>
                             <div class="progress">
                               <div class="progress-bar-wrp">
-                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="0"
-                                  aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </div>
-                            <div class="clearfix">
-                              <div class="number float-left">Design Research </div>
-                              <div class="number float-right">80%</div>
-                            </div>
-                            <div class="progress">
-                              <div class="progress-bar-wrp">
-                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25"
+                                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="0"
                                   aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </div>
                             <div class="clearfix">
                               <div class="number float-left">Front-End Coding</div>
-                              <div class="number float-right">70%</div>
+                              <div class="number float-right"></div>
+                            </div>
+                            <div class="progress">
+                              <div class="progress-bar-wrp">
+                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="25"
+                                  aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                            <div class="clearfix">
+                              <div class="number float-left">Design Research</div>
+                              <div class="number float-right"></div>
                             </div>
                             <div class="progress">
                               <div class="progress-bar-wrp">
@@ -276,38 +277,40 @@
                       <div class="row">
                         <div class="col-md-12">
                           <div class="project-row">
-                            <a class="active" href="project-detail.html">
+                            <a class="active btn-modal" id="btn-game-master">
                               <span class="project-number">01</span>
                               <h2 class="project-title">Game Master</h2>
                               <div class="project-category">Educative Platform for the Gamers Community</div>
                             </a>
                           </div>
                           <div class="project-row">
-                            <a href="project-detail.html">
+                            <a class="btn-modal" id="btn-ascent">
                               <span class="project-number">02</span>
                               <h2 class="project-title">Ascent</h2>
                               <div class="project-category">Mobile platform for Bank branch</div>
                             </a>
                           </div>
                           <div class="project-row">
-                            <a href="project-detail.html">
+                            <a class="btn-modal" id="btn-tv-shows">
                               <span class="project-number">03</span>
                               <h2 class="project-title">Tv Shows</h2>
                               <div class="project-category">Self-proposal VOD service for Apple Tv</div>
                             </a>
                           </div>
                           <div class="project-row">
-                            <a href="project-detail.html">
+                            <a class="btn-modal" href="project-detail.html">
                               <span class="project-number">04</span>
                               <h2 class="project-title">Artech Data</h2>
                               <div class="project-category">Interactive recommendation system</div>
                             </a>
                           </div>
+                          <!--
                           <div class="view-all view-all-projects">
                             <a href="projects.html">
                               View all projects
                             </a>
                           </div>
+                          -->
                         </div>
                       </div>
                     </div>
@@ -567,6 +570,83 @@
         </div>
       </div>
     </div>
+
+
+    <!-- Game Master - Modal -->
+    <div id="modalGameMaster" class="modal-project">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+
+        <video class="gm-video" width="100%" loop>
+          <source src="./projects-sources/game-master/banner.mp4" type="video/mp4">
+        </video>
+        <img src="./projects-sources/game-master/01.png" width="100%">
+        <img src="./projects-sources/game-master/02.png" width="100%">
+        <img src="./projects-sources/game-master/03.png" width="100%">
+        <img src="./projects-sources/game-master/04.gif" width="100%">
+        <img src="./projects-sources/game-master/05.png" width="100%">
+        <img src="./projects-sources/game-master/06.png" width="100%">
+        <iframe style="border: none;" width="100%" height="750x"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FFWCNcNxN4BT0PfjysK1yHJAK%2FGame-Master-UI%3Fnode-id%3D1%253A110%26scaling%3Dmin-zoom"
+          allowfullscreen></iframe>
+        <img src="./projects-sources/game-master/07.png" width="100%">
+      </div>
+
+    </div>
+
+    <!-- Ascent - Modal -->
+    <div id="modalAscent" class="modal-project">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+
+        <video class="gm-video" width="100%" loop>
+          <source src="./projects-sources/game-master/banner.mp4" type="video/mp4">
+        </video>
+        <img src="./projects-sources/game-master/01.png" width="100%">
+        <img src="./projects-sources/game-master/02.png" width="100%">
+        <img src="./projects-sources/game-master/03.png" width="100%">
+        <img src="./projects-sources/game-master/04.png" width="100%">
+        <img src="./projects-sources/game-master/05.png" width="100%">
+        <img src="./projects-sources/game-master/06.png" width="100%">
+        <img src="./projects-sources/game-master/07.png" width="100%">
+      </div>
+
+    </div>
+
+    <!-- Tv Shows - Modal -->
+    <div id="modalTvShows" class="modal-project">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+
+        <img src="./projects-sources/tv-shows/01.png" width="100%">
+        <img src="./projects-sources/tv-shows/02.png" width="100%">
+        <img src="./projects-sources/tv-shows/03.png" width="100%">
+        <video class="gm-video" width="100%" controls>
+          <source src="./projects-sources/tv-shows/04.mp4" type="video/mp4">
+        </video>
+        <img src="./projects-sources/tv-shows/05.png" width="100%">
+        <video class="gm-video" width="100%" controls>
+          <source src="./projects-sources/tv-shows/06.mp4" type="video/mp4">
+        </video>
+        <img src="./projects-sources/tv-shows/07.png" width="100%">
+        <video class="gm-video" width="100%" controls>
+          <source src="./projects-sources/tv-shows/08.mp4" type="video/mp4">
+        </video>
+        <img src="./projects-sources/tv-shows/09.png" width="100%">
+        <img src="./projects-sources/tv-shows/10.png" width="100%">
+        <video class="gm-video" width="100%" controls>
+          <source src="./projects-sources/tv-shows/11.mp4" type="video/mp4">
+        </video>
+        <img src="./projects-sources/tv-shows/12.png" width="100%">
+        <img src="./projects-sources/tv-shows/13.png" width="100%">
+        
+      </div>
+
+    </div>
+
   </div>
   <!-- jQuery -->
 
@@ -581,6 +661,7 @@
 
   <!-- Scripts -->
   <script src="js/scripts.js"></script>
+  <script src="js/project.popup.js"></script>
 </body>
 
 </html>

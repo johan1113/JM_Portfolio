@@ -63,6 +63,7 @@
 @import url('magnific-popup.css');
 @import url('jquery.pagepiling.css');
 @import url('owl.carousel.css');
+@import url('modals.css');
 
 
 html{
@@ -1260,6 +1261,14 @@ a.brand:focus{
   text-decoration: none;
 }
 
+.cta-works {
+  color:#fff;
+  font-size: 1.26rem;
+}
+
+.cta-works:hover{
+  text-decoration: none;
+}
 
 
 /* 3.2 Section Specialization */
