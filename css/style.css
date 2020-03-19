@@ -367,7 +367,7 @@ label.error{
 
 .btn:hover,
 .btn:focus{
-  background-color:#f5468b;
+  background-color:rgb(48, 0, 160);
   color: #fff;
   -webkit-box-shadow:none;
   box-shadow: none;
@@ -1643,6 +1643,7 @@ a.brand:focus{
   height: 1px;
   width: 1000000px;
   margin-right: 2rem;
+  z-index: 200;
 }
 
 
