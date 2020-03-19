@@ -57,9 +57,11 @@
         <li data-menuanchor="page6">
           <a href="#page6">resume</a>
         </li>
+        <!--
         <li data-menuanchor="page7">
           <a href="#page7">testimonials</a>
         </li>
+        -->
         <li data-menuanchor="page8">
           <a href="#page8">contact me</a>
         </li>
@@ -72,7 +74,6 @@
           <a href="" class="icon ion-social-linkedin"></a>
           <a href="" class="icon ion-social-dribbble-outline"></a>
         </div>
-        <div class="copy">© Johan Medina 2020. All Rights Reseverd.</div>
       </div>
     </div>
 
@@ -175,11 +176,13 @@
                             interactions that guarantee the retention of motivation in users.</p>
                         </div>
                       </div>
+
                       <div class="view-all">
                         <a href="#">
-                          Download resume
+                          Download CV
                         </a>
                       </div>
+
                     </div>
                   </div>
                 </div>
@@ -298,7 +301,7 @@
                             </a>
                           </div>
                           <div class="project-row">
-                            <a class="btn-modal" href="project-detail.html">
+                            <a class="btn-modal" id="btn-artech-data">
                               <span class="project-number">04</span>
                               <h2 class="project-title">Artech Data</h2>
                               <div class="project-category">Interactive recommendation system</div>
@@ -451,7 +454,7 @@
         </div>
       </div>
 
-
+      <!--
       <div data-anchor="page7" class="pp-scrollable text-white section section-7">
         <div class="scroll-wrap">
           <div class="section-bg" style="background-image:url(images/bg/testimonials.jpg);"></div>
@@ -512,7 +515,7 @@
           </div>
         </div>
       </div>
-
+-->
 
       <div data-anchor="page8" class="pp-scrollable section section-8">
         <div class="scroll-wrap">
@@ -533,6 +536,13 @@
                             </h3>
                             <h3><span class="phone">(+57) 316 532 5256</span></h3>
                           </section>
+                          <!--
+                          <div class="view-all">
+                            <a href="#">
+                              Download resume
+                            </a>
+                          </div>
+                          -->
                         </div>
                         <div class="col-md-6">
                           <div class="contact-info">
@@ -601,16 +611,26 @@
       <!-- Modal content -->
       <div class="modal-content">
 
-        <video class="gm-video" width="100%" loop>
-          <source src="./projects-sources/game-master/banner.mp4" type="video/mp4">
+        <img src="./projects-sources/ascent/01.png" width="100%">
+        <img src="./projects-sources/ascent/02.png" width="100%">
+        <img src="./projects-sources/ascent/03.png" width="100%">
+        <img src="./projects-sources/ascent/04.png" width="100%">
+        <img src="./projects-sources/ascent/05.png" width="100%">
+        <img src="./projects-sources/ascent/06.png" width="100%">
+        <img src="./projects-sources/ascent/07.png" width="100%">
+        <video class="ascent-08" width="100%" loop>
+          <source src="./projects-sources/ascent/08.mp4" type="video/mp4">
         </video>
-        <img src="./projects-sources/game-master/01.png" width="100%">
-        <img src="./projects-sources/game-master/02.png" width="100%">
-        <img src="./projects-sources/game-master/03.png" width="100%">
-        <img src="./projects-sources/game-master/04.png" width="100%">
-        <img src="./projects-sources/game-master/05.png" width="100%">
-        <img src="./projects-sources/game-master/06.png" width="100%">
-        <img src="./projects-sources/game-master/07.png" width="100%">
+        <img src="./projects-sources/ascent/09.png" width="100%">
+        <img src="./projects-sources/ascent/10.png" width="100%">
+        <video class="ascent-11" width="100%" loop>
+          <source src="./projects-sources/ascent/11.mp4" type="video/mp4">
+        </video>
+        <img src="./projects-sources/ascent/12.png" width="100%">
+        <video class="ascent-prototype" width="100%" controls>
+          <source src="./projects-sources/ascent/prototype.mp4" type="video/mp4">
+        </video>
+        <img src="./projects-sources/ascent/13.png" width="100%">
       </div>
 
     </div>
@@ -624,27 +644,45 @@
         <img src="./projects-sources/tv-shows/01.png" width="100%">
         <img src="./projects-sources/tv-shows/02.png" width="100%">
         <img src="./projects-sources/tv-shows/03.png" width="100%">
-        <video class="gm-video" width="100%" controls>
+        <video width="100%" controls>
           <source src="./projects-sources/tv-shows/04.mp4" type="video/mp4">
         </video>
         <img src="./projects-sources/tv-shows/05.png" width="100%">
-        <video class="gm-video" width="100%" controls>
+        <video width="100%" controls>
           <source src="./projects-sources/tv-shows/06.mp4" type="video/mp4">
         </video>
         <img src="./projects-sources/tv-shows/07.png" width="100%">
-        <video class="gm-video" width="100%" controls>
+        <video width="100%" controls>
           <source src="./projects-sources/tv-shows/08.mp4" type="video/mp4">
         </video>
         <img src="./projects-sources/tv-shows/09.png" width="100%">
         <img src="./projects-sources/tv-shows/10.png" width="100%">
-        <video class="gm-video" width="100%" controls>
+        <video width="100%" controls>
           <source src="./projects-sources/tv-shows/11.mp4" type="video/mp4">
         </video>
         <img src="./projects-sources/tv-shows/12.png" width="100%">
         <img src="./projects-sources/tv-shows/13.png" width="100%">
-        
-      </div>
 
+      </div>
+    </div>
+
+    <!-- Artech Data - Modal -->
+    <div id="modalArtechData" class="modal-project">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+
+        <video class="artech-data-01" width="100%" loop>
+          <source src="./projects-sources/artech-data/01.mp4" type="video/mp4">
+        </video>
+        <img src="./projects-sources/artech-data/02.png" width="100%">
+        <img src="./projects-sources/artech-data/03.png" width="100%">
+        <img src="./projects-sources/artech-data/04.png" width="100%">
+        <img src="./projects-sources/artech-data/05.png" width="100%">
+        <iframe style="border: none;" width="100%" height="700x" src="http://artech-data.herokuapp.com/"
+          allowfullscreen></iframe>
+        <img src="./projects-sources/artech-data/07.png" width="100%">
+      </div>
     </div>
 
   </div>
