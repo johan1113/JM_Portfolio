@@ -5,7 +5,7 @@ $subject = $_POST["subject"];
 $message = $_POST["message"];
 
 
-$EmailTo = "000.jsebastianm1113@gmail.com";
+$EmailTo = "jsebastianm1113@gmail.com";
 $Title = "New Message Received";
 
 // prepare email body text
@@ -27,5 +27,6 @@ $Fields .= "\n";
 
 
 // send email
-$success = mail($EmailTo,  $Title,  $Fields, "From:".$email);
+$success = mail($EmailTo,  $Title,  $Fields, "From:".$email); 
+?>
 
