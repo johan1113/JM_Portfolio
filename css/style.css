@@ -384,6 +384,29 @@ label.error{
   display: inline-block;
 }
 
+#icon-behance{
+  height: 18px;
+  width: 18px;
+  background-image: url('../images/icons/behance-white.png');
+  background-size: cover;
+  transition: .3s ease-in-out;
+}
+#icon-behance:hover{
+  background-image: url('../images/icons/behance-blue.png');
+}
+
+#icon-right-behance{
+  height: 18px;
+  width: 18px;
+  background-image: url('../images/icons/behance-gray.png');
+  background-size: cover;
+  transition: .3s ease-in-out;
+}
+#icon-right-behance:hover{
+  background-image: url('../images/icons/behance-blue.png');
+}
+
+
 .ion-ios-play{
   position:relative;
   width: 5rem;
@@ -1900,7 +1923,19 @@ a.brand:focus{
   transform:scale(1.4);
 }
 
+/* 3.7 Section Contact Me */
+.cv-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
 
+.cv-preview img {
+  height: 35vh;
+  margin-bottom: 3vh;
+}
 
 /* ------------------------------------------------------------------------------- */
 /*  4. Project Detail
