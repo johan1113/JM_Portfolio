@@ -379,14 +379,14 @@ label.error{
 /* 1.5 Icons */
 
 
-
 .icon{
   display: inline-block;
 }
 
 #icon-behance{
-  height: 18px;
-  width: 18px;
+  line-height: 1;
+  height: 2rem;
+  width: 2rem;
   background-image: url('../images/icons/behance-white.png');
   background-size: cover;
   transition: .3s ease-in-out;
@@ -396,8 +396,9 @@ label.error{
 }
 
 #icon-right-behance{
-  height: 18px;
-  width: 18px;
+  line-height: 1;
+  height: 2rem;
+  width: 2rem;
   background-image: url('../images/icons/behance-gray.png');
   background-size: cover;
   transition: .3s ease-in-out;
@@ -706,10 +707,10 @@ a.brand:focus{
 
 .social-list a{
   float: left;
-  font-size: 1.428rem;
+  font-size: 2rem;
   line-height: 1;
   color:#fff;
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
 
 .social-list a:first-child{
@@ -1572,7 +1573,7 @@ a.brand:focus{
 .view-all-projects,
 .project-row,
 .project-detail-row{
-  padding-left:3rem;
+  padding-left:40px;
 }
 
 .project-row:last-child{
@@ -1602,6 +1603,7 @@ a.brand:focus{
   position:relative;
 }
 
+/*
 .project-row a:after,
 .project-row a.active:after,
 .project-detail-row a:after{
@@ -1615,16 +1617,19 @@ a.brand:focus{
   width:100000px;
   transition:opacity 0.3s;
 }
+*/
 
 .project-detail-row a:after{
   top:5.5vmin;
 }
 
+/*
 .project-row a:hover:after,
 .project-row a.active:after,
 .project-detail-row a:hover:after{
   opacity:1;
 }
+*/
 
 .project-row a.active{
   opacity: 1;
@@ -1680,7 +1685,7 @@ a.brand:focus{
   .view-all-projects,
   .project-row,
   .project-detail-row{
-    padding-left: 20%;
+    /*padding-left: 20%;*/
   }
 
   .project-title{
