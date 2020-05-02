@@ -757,6 +757,10 @@ a.brand:focus{
   opacity: 0.3;
 }
 
+.contacts .contact-item:hover a{
+  color: #4B02F6;
+}
+
 .contact-address{
   margin-top:5rem;
 }
@@ -1774,6 +1778,22 @@ a.brand:focus{
 
 .section.active .col-partner:nth-child(12){
   transition-delay: 1.4s;
+}
+
+.section.active .col-partner:nth-child(13){
+  transition-delay: 1.5s;
+}
+
+.section.active .col-partner:nth-child(14){
+  transition-delay: 1.6s;
+}
+
+.section.active .col-partner:nth-child(15){
+  transition-delay: 1.7s;
+}
+
+.section.active .col-partner:nth-child(16){
+  transition-delay: 1.8s;
 }
 
 .col-partner img{
