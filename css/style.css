@@ -1250,6 +1250,20 @@ a.brand:focus{
   transform:translateY(0);
 }
 
+.subtitle-head{
+  line-height: 1.714;
+  margin-top:0;
+  margin-bottom: 1rem;
+  letter-spacing: 0.3em;
+}
+
+.home-description{
+  font-size: 1.3rem;
+  line-height: 1.714;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
 .subtitle-top{
   line-height: 1.714;
   margin-top:0;
@@ -1301,7 +1315,26 @@ a.brand:focus{
 
 /* 3.2 Section Specialization */
 
+.skill-type{
+  color:white;
+}
 
+.specialization-type{
+  color:#4B02F6;
+}
+
+.specialization-title{
+  color: white;
+}
+
+.skill-title{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.icon-skill{
+  font-size:5rem;
+  color:rgba(255, 255, 255, 0.5);
+}
 
 .icon-specialization{
   font-size:5rem;
@@ -1358,7 +1391,7 @@ a.brand:focus{
   top:0;
   padding:2.2rem 3.6rem 3.6rem;
   background: rgba(255,255,255,0.1);
-  transition:background 0.5s, top 0.5s;
+  transition: 0.5s, top 0.5s;
 }
 
 .col-resume:hover{
@@ -1456,9 +1489,9 @@ a.brand:focus{
 
 .experience-info div:after{
   position:absolute;
-  right:100%;
+  right:120%;
   content:'';
-  width:5rem;
+  width:4rem;
   bottom: 0.8rem;
   height:1px;
   background: #fff;
