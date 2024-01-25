@@ -1020,7 +1020,7 @@ a.brand:hover .brand-svg{
   z-index: 10;
   left:0;
   bottom:2.4rem;
-  color: #000;
+  color: #E5406E;
 }
 
 .copy-bottom.white{
@@ -1108,10 +1108,15 @@ a.brand:hover .brand-svg{
   transform:scale(1.6);
 }
 
+.profile-pic-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .profile-pic{
   width: 70%;
 }
-
 
 
 /* 3.1 Sections */
@@ -1119,7 +1124,7 @@ a.brand:hover .brand-svg{
 
 
 .pagepiling .section{
-  background: #FFF6F0;
+  background: #FFEDE1;
   padding-top: 10.3rem;
   padding-bottom: 6rem;
 }
@@ -1386,7 +1391,7 @@ a.brand:hover .brand-svg{
 
 
 
-.section-3 .vertical-centred{
+.section-2 .vertical-centred{
   padding-top:6rem;
 }
 .resume-title{
@@ -1470,7 +1475,7 @@ a.brand:hover .brand-svg{
   position: relative;
   white-space:nowrap;
   padding:3.75rem;
-  border:1px solid #fff;
+  border:1px solid #502E9E;
 }
 
 .experience-border{
@@ -1496,14 +1501,14 @@ a.brand:hover .brand-svg{
   font-size:23.142rem;
   line-height: 1;
   font-weight:400;
-  color: #fff;
+  color: #684EDD;
 }
 
 .experience-info{
   position:relative;
   font-size: 1.25rem;
   line-height: 1.481;
-  color: #fff;
+  color: #502E9E;
   text-align: right;
 }
 
@@ -1520,12 +1525,12 @@ a.brand:hover .brand-svg{
 
 .experience-info div:after{
   position:absolute;
-  right:120%;
+  right:132%;
   content:'';
-  width:4rem;
+  width:8rem;
   bottom: 0.8rem;
   height:1px;
-  background: #fff;
+  background: #502E9E;
 }
 
 .progress-bars{
@@ -1578,7 +1583,11 @@ a.brand:hover .brand-svg{
 }
 
 .experience-description{
-  color: #fff;
+  color: #502E9E;
+}
+
+.experience-description span{
+  font-weight: bold;
 }
 
 
@@ -1719,14 +1728,14 @@ a.brand:hover .brand-svg{
 
 .view-all{
   position: relative;
-  color: #fff;
+  color: #502E9E;
   font-family: 'Montserrat', sans-serif;
   font-size:1.26rem;
   margin-top:2.3rem;
 }
 
 .view-all a{
-  color:#fff;
+  color:#502E9E;
   position: relative;
 }
 
@@ -1735,7 +1744,7 @@ a.brand:hover .brand-svg{
   position: absolute;
   right: 100%;
   top: 50%;
-  background: #fff;
+  background: #502E9E;
   height: 1px;
   width: 1000000px;
   margin-right: 2rem;
@@ -1744,7 +1753,7 @@ a.brand:hover .brand-svg{
 
 
 .view-all a:hover{
-  color:#4B02F6;
+  color:#E5406E;
   text-decoration: none;
 }
 
