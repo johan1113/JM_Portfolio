@@ -73,7 +73,7 @@ body{
   font-weight: 400;
   letter-spacing: 0.025em;
   line-height: 1.9428;
-  color: #1b1b1b;
+  color: #502E9E;
   background: #FFEDE1;
   -webkit-overflow-scrolling:touch;
 }
@@ -85,21 +85,21 @@ body{
 
 ::-webkit-scrollbar-thumb {
   cursor: pointer;
-  background: #4B02F6;
+  background: #502E9E;
 }
 
 ::selection{
-  background-color:#4B02F6;
+  background-color:#E5406E;
   color:#fff;
 }
 
 -webkit-::selection{
-    background-color:#4B02F6;
+    background-color:#E5406E;
     color:#fff;
 }
 
 ::-moz-selection{
-    background-color:#4B02F6;
+    background-color:#E5406E;
     color:#fff;
 }
 
@@ -348,14 +348,14 @@ label.error{
 
 
 .btn{
-  color:#fff;
+  color:#FFF6F0;
   letter-spacing: 0.025em;
   font-size: 1rem;
   display: inline-block;
   border:0;
   border-radius: 0;
   padding: 1.1em 2.28em 1em;
-  background-color: #4B02F6;
+  background-color: #684EDD;
   text-decoration: none;
   -webkit-transition: all .3s ease-out!important;
           transition: all .3s ease-out!important;
@@ -363,8 +363,8 @@ label.error{
 
 .btn:hover,
 .btn:focus{
-  background-color:rgb(48, 0, 160);
-  color: #fff;
+  background-color: #E5406E;
+  color: #FFF6F0;
   -webkit-box-shadow:none;
   box-shadow: none;
   outline: none!important;
@@ -588,7 +588,7 @@ label.error{
   top: -1px;
   width: 100%;
   height: 0;
-  background: #272727;
+  background: #FFEDE1;
   z-index: -1;
   box-shadow: none;
   -webkit-transition: all 0.3s cubic-bezier(0.37, 0.31, 0.2, 0.85);
@@ -626,8 +626,7 @@ label.error{
   display: inline-block;
 }
 
-a.brand:hover,
-a.brand:focus{
+a.brand:hover{
   text-decoration: none;
   color: #E5406E;
 }
@@ -649,6 +648,9 @@ a.brand:hover .brand-svg{
   vertical-align: bottom;
   margin-right: 0.65rem;
   background-image: url(../images/brand_violet.svg);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .brand-svg:hover{
@@ -665,6 +667,9 @@ a.brand:hover .brand-svg{
   font-weight: 600;
   font-size: 1.714rem;
   line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .brand-text{
@@ -730,7 +735,7 @@ a.brand:hover .brand-svg{
   float: left;
   font-size: 2rem;
   line-height: 1;
-  color:#fff;
+  color:#684EDD;
   margin-left: 3rem;
 }
 
@@ -739,7 +744,7 @@ a.brand:hover .brand-svg{
 }
 
 .social-list a:hover{
-  color:#4B02F6;
+  color:#E5406E;
   text-decoration: none;
 }
 
@@ -786,6 +791,10 @@ a.brand:hover .brand-svg{
   margin-top:5rem;
 }
 
+.contact-address h3{
+  color: #684EDD !important;
+}
+
 #success,
 #error{
   display:none;
@@ -819,7 +828,7 @@ a.brand:hover .brand-svg{
   right: 0;
   width: 100%;
   z-index: 102;
-  background-color: #1b1b1b;
+  background-color: #502E9E;
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   -o-transform: translateX(100%);
@@ -835,7 +844,7 @@ a.brand:hover .brand-svg{
   top: 2.3rem;
   font-size: 1.6rem;
   line-height: 1;
-  color: #fff;
+  color: #FFEDE1;
   cursor: pointer;
   margin-top:0.8rem;
   -webkit-transition: all 0.3s ease;
@@ -844,7 +853,7 @@ a.brand:hover .brand-svg{
 }
 
 .close-menu:hover{
-  color: #4B02F6;
+  color: #E5406E;
 }
 
 .menu-list{
@@ -872,13 +881,13 @@ a.brand:hover .brand-svg{
 }
 
 .menu-list li a{
-  color: #636363;
+  color: #FFEDE1;
 }
 
 .menu-list .active > a,
 .menu-list li a:hover{
   text-decoration: none;
-  color: #fff;
+  color: #E5406E;
 }
 
 .menu-list > li{
@@ -929,7 +938,7 @@ a.brand:hover .brand-svg{
 }
 
 .menu-footer .social-list a{
-  color: #7e7e7e;
+  color: #FFEDE1;
   margin:0;
   margin-right:2.7rem;
 }
@@ -939,7 +948,7 @@ a.brand:hover .brand-svg{
 }
 
 .menu-footer .social-list a:hover{
-  color:#4B02F6;
+  color:#E5406E;
 }
 
 .menu-footer .copy{
@@ -1020,7 +1029,7 @@ a.brand:hover .brand-svg{
   z-index: 10;
   left:0;
   bottom:2.4rem;
-  color: #E5406E;
+  color: #502E9E;
 }
 
 .copy-bottom.white{
@@ -1187,6 +1196,7 @@ a.brand:hover .brand-svg{
 }
 
 .vertical-title{
+  color: #684EDD;
   position: absolute;
   text-align: center;
   font-weight: 600;
@@ -1732,6 +1742,7 @@ a.brand:hover .brand-svg{
   font-family: 'Montserrat', sans-serif;
   font-size:1.26rem;
   margin-top:2.3rem;
+  margin-bottom: 100px;
 }
 
 .view-all a{
