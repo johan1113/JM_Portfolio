@@ -14,7 +14,10 @@
   <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
 
   <title>Johan Medina | Interaction Designer</title>
-
+  <!-- Preload critical assets -->
+  <link rel=\"preload\" href=\"images/profile_picture.jpg\" as=\"image\">
+  <link rel=\"preload\" href=\"css/style.css\" as=\"style\">
+  <link rel=\"preload\" href=\"js/jquery.min.js\" as=\"script\">
   <!-- Styles -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i&display=swap" rel="stylesheet">
@@ -151,7 +154,7 @@
                     <div class="intro">
                       <div class="row align-items-center">
                         <div class="col-lg-12 offset-xl-1">
-                          <img src="images/bg/banner.jpg" style="width: 90%; margin: 100px 0 30px 0;" alt="">
+                          <img src="images/bg/banner.jpg" style="width: 90%; margin: 100px 0 30px 0;" alt="" loading="lazy">
                         </div>
                       </div>
                       <div class="row align-items-center">
@@ -270,7 +273,7 @@
                         </div>
                         <div class="col-md-6">
                           <div class="cv-preview">
-                            <img src="./documents/cv-preview.png">
+                            <img src="./documents/cv-preview.png" loading="lazy">
                             <a href="./documents/Johan Medina CV.pdf" target="_blank" class="btn">Download CV</a>
                           </div>
                         </div>
@@ -286,106 +289,110 @@
     </div>
 
     <!-- Game Master - Modal -->
-    <div id="modalGameMaster" class="modal-project">
-
+    <div id="modalGameMaster" class="modal-project" data-loaded="false">
       <!-- Modal content -->
       <div class="modal-content">
-
-        <video class="gm-video" width="100%" loop>
-          <source src="./projects-sources/game-master/banner.mp4" type="video/mp4">
+        <div class="project-loader">
+          <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+          </div>
+        </div>
+        <video class="gm-video" width="100%" loop data-src="./projects-sources/game-master/banner.mp4">
         </video>
-        <img src="./projects-sources/game-master/01.png" width="100%">
-        <img src="./projects-sources/game-master/02.png" width="100%">
-        <img src="./projects-sources/game-master/03.png" width="100%">
-        <img src="./projects-sources/game-master/04.gif" width="100%">
-        <img src="./projects-sources/game-master/05.png" width="100%">
-        <img src="./projects-sources/game-master/06.png" width="100%">
+        <img data-src="./projects-sources/game-master/01.png" width="100%">
+        <img data-src="./projects-sources/game-master/02.png" width="100%">
+        <img data-src="./projects-sources/game-master/03.png" width="100%">
+        <img data-src="./projects-sources/game-master/04.gif" width="100%">
+        <img data-src="./projects-sources/game-master/05.png" width="100%">
+        <img data-src="./projects-sources/game-master/06.png" width="100%">
         <iframe style="border: none;" width="100%" height="750x"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FFWCNcNxN4BT0PfjysK1yHJAK%2FGame-Master-UI%3Fnode-id%3D1%253A110%26scaling%3Dmin-zoom"
+          data-src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FFWCNcNxN4BT0PfjysK1yHJAK%2FGame-Master-UI%3Fnode-id%3D1%253A110%26scaling%3Dmin-zoom"
           allowfullscreen></iframe>
-        <img src="./projects-sources/game-master/07.png" width="100%">
+        <img data-src="./projects-sources/game-master/07.png" width="100%">
       </div>
-
     </div>
 
     <!-- Ascent - Modal -->
-    <div id="modalAscent" class="modal-project">
-
+    <div id="modalAscent" class="modal-project" data-loaded="false">
       <!-- Modal content -->
       <div class="modal-content">
-
-        <img src="./projects-sources/ascent/01.png" width="100%">
-        <img src="./projects-sources/ascent/02.png" width="100%">
-        <img src="./projects-sources/ascent/03.png" width="100%">
-        <img src="./projects-sources/ascent/04.png" width="100%">
-        <img src="./projects-sources/ascent/05.png" width="100%">
-        <img src="./projects-sources/ascent/06.png" width="100%">
-        <img src="./projects-sources/ascent/07.png" width="100%">
-        <video class="ascent-08" width="100%" loop>
-          <source src="./projects-sources/ascent/08.mp4" type="video/mp4">
+        <div class="project-loader">
+          <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+          </div>
+        </div>
+        <img data-src="./projects-sources/ascent/01.png" width="100%">
+        <img data-src="./projects-sources/ascent/02.png" width="100%">
+        <img data-src="./projects-sources/ascent/03.png" width="100%">
+        <img data-src="./projects-sources/ascent/04.png" width="100%">
+        <img data-src="./projects-sources/ascent/05.png" width="100%">
+        <img data-src="./projects-sources/ascent/06.png" width="100%">
+        <img data-src="./projects-sources/ascent/07.png" width="100%">
+        <video class="ascent-08" width="100%" loop data-src="./projects-sources/ascent/08.mp4">
         </video>
-        <img src="./projects-sources/ascent/09.png" width="100%">
-        <img src="./projects-sources/ascent/10.png" width="100%">
-        <video class="ascent-11" width="100%" loop>
-          <source src="./projects-sources/ascent/11.mp4" type="video/mp4">
+        <img data-src="./projects-sources/ascent/09.png" width="100%">
+        <img data-src="./projects-sources/ascent/10.png" width="100%">
+        <video class="ascent-11" width="100%" loop data-src="./projects-sources/ascent/11.mp4">
         </video>
-        <img src="./projects-sources/ascent/12.png" width="100%">
-        <video class="ascent-prototype" width="100%" controls>
-          <source src="./projects-sources/ascent/prototype.mp4" type="video/mp4">
+        <img data-src="./projects-sources/ascent/12.png" width="100%">
+        <video class="ascent-prototype" width="100%" controls data-src="./projects-sources/ascent/prototype.mp4">
         </video>
-        <img src="./projects-sources/ascent/13.png" width="100%">
+        <img data-src="./projects-sources/ascent/13.png" width="100%">
       </div>
-
     </div>
 
     <!-- Tv Shows - Modal -->
-    <div id="modalTvShows" class="modal-project">
-
+    <div id="modalTvShows" class="modal-project" data-loaded="false">
       <!-- Modal content -->
       <div class="modal-content">
-
-        <img src="./projects-sources/tv-shows/01.png" width="100%">
-        <img src="./projects-sources/tv-shows/02.png" width="100%">
-        <img src="./projects-sources/tv-shows/03.png" width="100%">
-        <video width="100%" controls>
-          <source src="./projects-sources/tv-shows/04.mp4" type="video/mp4">
+        <div class="project-loader">
+          <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+          </div>
+        </div>
+        <img data-src="./projects-sources/tv-shows/01.png" width="100%">
+        <img data-src="./projects-sources/tv-shows/02.png" width="100%">
+        <img data-src="./projects-sources/tv-shows/03.png" width="100%">
+        <video width="100%" controls data-src="./projects-sources/tv-shows/04.mp4">
         </video>
-        <img src="./projects-sources/tv-shows/05.png" width="100%">
-        <video width="100%" controls>
-          <source src="./projects-sources/tv-shows/06.mp4" type="video/mp4">
+        <img data-src="./projects-sources/tv-shows/05.png" width="100%">
+        <video width="100%" controls data-src="./projects-sources/tv-shows/06.mp4">
         </video>
-        <img src="./projects-sources/tv-shows/07.png" width="100%">
-        <video width="100%" controls>
-          <source src="./projects-sources/tv-shows/08.mp4" type="video/mp4">
+        <img data-src="./projects-sources/tv-shows/07.png" width="100%">
+        <video width="100%" controls data-src="./projects-sources/tv-shows/08.mp4">
         </video>
-        <img src="./projects-sources/tv-shows/09.png" width="100%">
-        <img src="./projects-sources/tv-shows/10.png" width="100%">
-        <video width="100%" controls>
-          <source src="./projects-sources/tv-shows/11.mp4" type="video/mp4">
+        <img data-src="./projects-sources/tv-shows/09.png" width="100%">
+        <img data-src="./projects-sources/tv-shows/10.png" width="100%">
+        <video width="100%" controls data-src="./projects-sources/tv-shows/11.mp4">
         </video>
-        <img src="./projects-sources/tv-shows/12.png" width="100%">
-        <img src="./projects-sources/tv-shows/13.png" width="100%">
-
+        <img data-src="./projects-sources/tv-shows/12.png" width="100%">
+        <img data-src="./projects-sources/tv-shows/13.png" width="100%">
       </div>
     </div>
 
     <!-- Artech Data - Modal -->
-    <div id="modalArtechData" class="modal-project">
-
+    <div id="modalArtechData" class="modal-project" data-loaded="false">
       <!-- Modal content -->
       <div class="modal-content">
-
-        <video class="artech-data-01" width="100%" loop>
-          <source src="./projects-sources/artech-data/01.mp4" type="video/mp4">
+        <div class="project-loader">
+          <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+          </div>
+        </div>
+        <video class="artech-data-01" width="100%" loop data-src="./projects-sources/artech-data/01.mp4">
         </video>
-        <img src="./projects-sources/artech-data/02.png" width="100%">
-        <img src="./projects-sources/artech-data/03.png" width="100%">
-        <img src="./projects-sources/artech-data/04.png" width="100%">
-        <img src="./projects-sources/artech-data/05.png" width="100%">
+        <img data-src="./projects-sources/artech-data/02.png" width="100%">
+        <img data-src="./projects-sources/artech-data/03.png" width="100%">
+        <img data-src="./projects-sources/artech-data/04.png" width="100%">
+        <img data-src="./projects-sources/artech-data/05.png" width="100%">
         <div class="live-demo-container">
           <a href="http://artech-data.herokuapp.com/" target="_blank" class="btn-live-demo">GO TO LIVE DEMO</a>
         </div>
-        <img src="./projects-sources/artech-data/07.png" width="100%">
+        <img data-src="./projects-sources/artech-data/07.png" width="100%">
       </div>
     </div>
 
@@ -394,17 +401,17 @@
   <!-- jQuery -->
 
   <script src="js/jquery.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/smoothscroll.js"></script>
-  <script src="js/animsition.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.pagepiling.min.js"></script>
+  <script src="js/wow.min.js" defer></script>
+  <script src="js/smoothscroll.js" defer></script>
+  <script src="js/animsition.js" defer></script>
+  <script src="js/jquery.validate.min.js" defer></script>
+  <script src="js/jquery.magnific-popup.min.js" defer></script>
+  <script src="js/owl.carousel.min.js" defer></script>
+  <script src="js/jquery.pagepiling.min.js" defer></script>
 
   <!-- Scripts -->
-  <script src="js/scripts.js"></script>
-  <script src="js/project.popup.js"></script>
+  <script src="js/scripts.js" defer></script>
+  <script src="js/project.popup.js" defer></script>
 </body>
 
 </html>
